@@ -13,6 +13,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Hello World")
         // Do any additional setup after loading the view.
     }
 

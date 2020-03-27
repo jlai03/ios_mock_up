@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8001EAFD242C2BDF0024CD28 /* captureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001EAFC242C2BDF0024CD28 /* captureViewController.swift */; };
 		803C5DC624282E0B00FF069A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C5DC524282E0B00FF069A /* AppDelegate.swift */; };
 		803C5DC824282E0B00FF069A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C5DC724282E0B00FF069A /* SceneDelegate.swift */; };
 		803C5DCA24282E0B00FF069A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C5DC924282E0B00FF069A /* ViewController.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8001EAFC242C2BDF0024CD28 /* captureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = captureViewController.swift; sourceTree = "<group>"; };
 		803C5DC224282E0B00FF069A /* Mock_Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mock_Up.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803C5DC524282E0B00FF069A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803C5DC724282E0B00FF069A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				803C5DC724282E0B00FF069A /* SceneDelegate.swift */,
 				803C5DC924282E0B00FF069A /* ViewController.swift */,
 				803C5DCB24282E0B00FF069A /* Main.storyboard */,
-				8001EAFC242C2BDF0024CD28 /* captureViewController.swift */,
 				803C5DCE24282E0D00FF069A /* Assets.xcassets */,
 				803C5DD024282E0D00FF069A /* LaunchScreen.storyboard */,
 				803C5DD324282E0D00FF069A /* Info.plist */,
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				803C5DCA24282E0B00FF069A /* ViewController.swift in Sources */,
-				8001EAFD242C2BDF0024CD28 /* captureViewController.swift in Sources */,
 				803C5DC624282E0B00FF069A /* AppDelegate.swift in Sources */,
 				803C5DC824282E0B00FF069A /* SceneDelegate.swift in Sources */,
 			);

@@ -109,7 +109,7 @@
         <!--View Controller-->
         <scene sceneID="acn-AK-GQ1">
             <objects>
-                <viewController id="B2v-le-SMS" sceneMemberID="viewController">
+                <viewController id="B2v-le-SMS" customClass="ViewController" customModule="Mock_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZv-fc-cyK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,13 +134,25 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fUM-Xh-kTI" kind="show" identifier="" id="CzB-SD-fRi"/>
+                                    <action selector="Capture:" destination="B2v-le-SMS" eventType="touchUpInside" id="1Kh-3f-r1D"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-iF-shp">
                                 <rect key="frame" x="51" y="182" width="304" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-OY-oXy">
+                                <rect key="frame" x="131" y="695" width="152" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Use Photo ">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fUM-Xh-kTI" kind="show" id="QWK-pu-oA5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <accessibility key="accessibilityConfiguration">
@@ -149,6 +161,9 @@
                         <viewLayoutGuide key="safeArea" id="GhP-51-Q52"/>
                     </view>
                     <navigationItem key="navigationItem" id="3N8-CU-fce"/>
+                    <connections>
+                        <outlet property="myImageview" destination="t3g-iF-shp" id="zVa-c4-Joy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAL-yi-364" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,7 +241,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CzB-SD-fRi"/>
+        <segue reference="QWK-pu-oA5"/>
         <segue reference="gdV-lc-kuB"/>
     </inferredMetricsTieBreakers>
 </document>

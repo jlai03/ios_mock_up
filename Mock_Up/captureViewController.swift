@@ -10,3 +10,7 @@ import Foundation
 import UIKit
 
 
+class captureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    
+}

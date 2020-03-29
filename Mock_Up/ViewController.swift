@@ -11,20 +11,14 @@ import UIKit
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-
     @IBOutlet weak var myImageview: UIImageView!
-    
     
     @IBAction func Capture(_ sender: Any) {
         let vc = UIImagePickerController()
+            vc.allowsEditing = true
             vc.delegate = self
             vc.sourceType = .camera
-            vc.allowsEditing = true
+            
                    
             self.present(vc, animated: true)
             {
@@ -36,22 +30,52 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
         {
-            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-            {
+            
+            if let image = info[.editedImage] as? UIImage {
+                 myImageview.image = image
+            }else if let image = info[.originalImage] as? UIImage {
                 myImageview.image = image
-                // send to server
-    //            let imageData:Data = image.pngData()!
-    //            let imageStr = imageData.base64EncodedString()
-            }
-            else
-            {
+            }else{
                 // Error message
             }
             
             self.dismiss(animated: true, completion: nil)
         }
         
+    
+      override func viewDidLoad() {
+          super.viewDidLoad()
+            
+        // ATTEMPT 1
+//        // Trying to get circular frame
+//        if myImageview != nil {
+//            myImageview.layer.cornerRadius = myImageview.frame.size.width/2
+//            myImageview.clipsToBounds = true
+//        }
+               
         
+        // ATTEMPT 2
+        if myImageview != nil {
+        
+            // layer
+            myImageview.layer.borderWidth = 1.0
+            myImageview.layer.masksToBounds = false
+            myImageview.layer.borderColor = UIColor.black.cgColor
+            myImageview.layer.cornerRadius = myImageview.frame.height/2
+            myImageview.clipsToBounds = true
+            
+        }
+        
+        
+        
+        
+        
+      
+        
+       
+        
+          // Do any additional setup after loading the view.
+      }
 
         
 }

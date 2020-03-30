@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "60A7558B-6E63-4BA7-9258-DF0125F4380F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mock_Up/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832 - f5d10e53fcf09ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.ViewController.__deallocating_deinit"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832 - 29a596118a976139"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mock_Up.ViewController"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832 - 614429553e2faf45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mock_Up.ViewController"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832 - ee7106a3a47c2ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mock_Up.ViewController&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "03F3C29A-EC23-4596-95B1-B2A0D6147832 - f3efce3b95070653"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mock_Up.ViewController&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mock_Up/uploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "uploadViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - c79044a88a99de8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.myImageview2.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - 8f476cf38b329b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.myImageview2.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - 3849348e659758c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.myImageview2.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - f2456c08b4ff2dc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.myImageview2.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - 9227b3b1144fe27b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mock_Up.uploadViewController"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "CC3A5A72-2FD0-4DEE-8D80-36BBDFE96D97 - ea12c54f72e35680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mock_Up.uploadViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mock_Up.uploadViewController&gt;"
+                  moduleName = "Mock_Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathanlai/Desktop/GitHub/ios_mock_up/Mock_Up/uploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29B3E477-5E24-4C5A-A46D-40A061F64364"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mock_Up/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

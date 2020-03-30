@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    var theImage: UIImage!
     
     @IBOutlet weak var myImageview: UIImageView!
     
@@ -28,6 +29,25 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     
     
+    @IBAction func usePhoto(_ sender: Any) {
+        // pass image to second view controller
+        self.theImage = myImageview.image!
+        performSegue(withIdentifier: "name", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if self.theImage != nil {
+            let viewController2 = segue.destination as! uploadViewController
+                       
+            viewController2.theImage2 = self.theImage
+        }
+        
+          
+    }
+    
+    
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
         {
             
@@ -43,18 +63,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
     
+    
+    
       override func viewDidLoad() {
           super.viewDidLoad()
             
-        // ATTEMPT 1
-//        // Trying to get circular frame
-//        if myImageview != nil {
-//            myImageview.layer.cornerRadius = myImageview.frame.size.width/2
-//            myImageview.clipsToBounds = true
-//        }
-               
-        
-        // ATTEMPT 2
+        // Circular Frame 
         if myImageview != nil {
         
             // layer
@@ -67,6 +81,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         
+      
         
         
         

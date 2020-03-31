@@ -133,8 +133,12 @@
                                     <action selector="Capture:" destination="B2v-le-SMS" eventType="touchUpInside" id="1Kh-3f-r1D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-OY-oXy">
-                                <rect key="frame" x="131" y="695" width="152" height="53"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-JB-MFe">
+                                <rect key="frame" x="62" y="201" width="290" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojE-O5-4Vh">
+                                <rect key="frame" x="131" y="672" width="152" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -142,13 +146,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fUM-Xh-kTI" kind="show" id="QWK-pu-oA5"/>
+                                    <action selector="usePhoto:" destination="B2v-le-SMS" eventType="touchUpInside" id="X3q-EV-gD2"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-JB-MFe">
-                                <rect key="frame" x="62" y="201" width="290" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <accessibility key="accessibilityConfiguration">
@@ -159,16 +159,17 @@
                     <navigationItem key="navigationItem" id="3N8-CU-fce"/>
                     <connections>
                         <outlet property="myImageview" destination="Ips-JB-MFe" id="Iha-3Y-KXy"/>
+                        <segue destination="fUM-Xh-kTI" kind="presentation" identifier="name" id="W8E-Hi-WwX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAL-yi-364" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2544.9275362318845" y="135.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--uploadViewController-->
         <scene sceneID="7gk-Zm-jv1">
             <objects>
-                <viewController id="fUM-Xh-kTI" customClass="ViewController" customModule="Mock_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="uploadViewController" id="fUM-Xh-kTI" customClass="uploadViewController" customModule="Mock_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEk-de-LGd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +214,7 @@
                         <barButtonItem key="backBarButtonItem" title="Retake" id="smU-mL-lCk"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="myImageview" destination="HzW-Ft-NlF" id="DJu-fy-wLJ"/>
+                        <outlet property="myImageview2" destination="HzW-Ft-NlF" id="XO7-lf-Bqw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq7-xD-fcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,6 +241,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="W8E-Hi-WwX"/>
         <segue reference="gdV-lc-kuB"/>
     </inferredMetricsTieBreakers>
 </document>

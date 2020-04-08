@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    // Class Image
     var theImage: UIImage!
     
+    // Class Login info
+    var username: String!
+    var password: String!
+    
+    // Username Display
+    @IBOutlet weak var U_Display: UILabel!
+    
+    
+    // ImageView - Outlet
     @IBOutlet weak var myImageview: UIImageView!
     
+    // Capture Button
     @IBAction func Capture(_ sender: Any) {
         let vc = UIImagePickerController()
             vc.allowsEditing = true
@@ -28,27 +39,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     
-    
+    // Use Photo Button
     @IBAction func usePhoto(_ sender: Any) {
         // pass image to second view controller
-        self.theImage = myImageview.image!
-        performSegue(withIdentifier: "name", sender: self)
+        if(myImageview.image != nil){
+            self.theImage = myImageview.image!
+        }
+        performSegue(withIdentifier: "UsePhoto", sender: self)
     }
     
-    
+    // Prepare for Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Create second instance
+         let viewController2 = segue.destination as! uploadViewController
+        // Image
         if self.theImage != nil {
-            let viewController2 = segue.destination as! uploadViewController
-                       
             viewController2.theImage2 = self.theImage
         }
-        
-          
+        if(self.username != "" && self.password != ""){
+            viewController2.username = self.username
+            viewController2.password = self.password
+        }
     }
     
     
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    // Image Picker Controller
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
         {
             
             if let image = info[.editedImage] as? UIImage {
@@ -64,11 +81,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
     
     
-    
-      override func viewDidLoad() {
+    // View Did Load
+    override func viewDidLoad() {
           super.viewDidLoad()
-            
-        // Circular Frame 
+        // User ID Display
+        if (username != nil){
+            U_Display.text = self.username!
+        }else{
+            U_Display.text = ""
+        }
+
+        // Circular Frame
         if myImageview != nil {
         
             // layer
@@ -79,16 +102,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             myImageview.clipsToBounds = true
             
         }
-        
-        
-      
-        
-        
-        
-      
-        
-       
-        
           // Do any additional setup after loading the view.
       }
 

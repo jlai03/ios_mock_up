@@ -67,10 +67,7 @@ class uploadViewController: UIViewController {
             print("Unable to form JPEG representation")
             return
         }
-    
-    /*
-    // MARK: - Navigation
-
+        
         let url = URL(string: "http://localhost:3000/camera/sendImage")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

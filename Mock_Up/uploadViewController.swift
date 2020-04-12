@@ -10,9 +10,14 @@ import UIKit
 
 class uploadViewController: UIViewController {
 
-  var theImage2: UIImage!
+    // Class Login info
+    var username: String!
+    var password: String!
     
-
+    // Class Image
+    var theImage2: UIImage!
+    
+    // Image View 2 - Outlet
     @IBOutlet weak var myImageview2: UIImageView!
     
     @IBAction func upload(_ sender: Any) {
@@ -20,23 +25,39 @@ class uploadViewController: UIViewController {
         sendImageTimestamp(image: theImage2, filename: "NewImage")
     }
     
+    // Retake Button
+    @IBAction func Retake(_ sender: Any) {
+        performSegue(withIdentifier: "Retake", sender: self)
+    }
     
-    override func viewDidLoad() {
-           super.viewDidLoad()
-
-            myImageview2.image = theImage2
+    // Prepare Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Create Second INstance
+        let viewController2 = segue.destination as! ViewController
+         // Username and Password
+        if(self.username != "" && self.password != ""){
+            viewController2.username = self.username
+            viewController2.password = self.password
+        }
+    }
         
+    
+    // View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // assign image
+        myImageview2.image = theImage2
+        
+        // circular frame
+        if myImageview2 != nil {
             
-    // ATTEMPT 2
-          if myImageview2 != nil {
-          
-              // layer
-              myImageview2.layer.borderWidth = 1.0
-              myImageview2.layer.masksToBounds = false
-              myImageview2.layer.borderColor = UIColor.black.cgColor
-              myImageview2.layer.cornerRadius = myImageview2.frame.height/2
-              myImageview2.clipsToBounds = true
-              
+            // layer
+            myImageview2.layer.borderWidth = 1.0
+            myImageview2.layer.masksToBounds = false
+            myImageview2.layer.borderColor = UIColor.black.cgColor
+            myImageview2.layer.cornerRadius = myImageview2.frame.height/2
+            myImageview2.clipsToBounds = true
           }
     }
     // Code for sending httpPost request
@@ -46,6 +67,9 @@ class uploadViewController: UIViewController {
             print("Unable to form JPEG representation")
             return
         }
+    
+    /*
+    // MARK: - Navigation
 
         let url = URL(string: "http://localhost:3000/camera/sendImage")!
         var request = URLRequest(url: url)

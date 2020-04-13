@@ -26,7 +26,7 @@ class uploadViewController: UIViewController {
     @IBAction func upload(_ sender: Any) {
         // TODO: connect this IB action to upload button
         
-        sendImageTimestamp(image: theImage2, filename: (username + ".Image"))
+        sendImageTimestamp(image: theImage2, filename: "NewImage")
     }
     
     // Retake Button

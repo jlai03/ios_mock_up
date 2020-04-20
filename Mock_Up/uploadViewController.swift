@@ -19,26 +19,35 @@ class uploadViewController: UIViewController {
     
     // Image View 2 - Outlet
     @IBOutlet weak var myImageview2: UIImageView!
-
     
+    // Upload Button
     @IBAction func upload(_ sender: Any) {
         // TODO: connect this IB action to upload button
-         sendImageTimestamp(image: theImage2, filename: "NewImage")
+        
+        sendImageTimestamp(image: theImage2, filename: "NewImage")
+        
+        performSegue(withIdentifier: "Upload", sender: self)
+
     }
     
-    // Retake Button
+   // Retake Button
     @IBAction func Retake(_ sender: Any) {
-        performSegue(withIdentifier: "Retake", sender: self)
+         dismiss(animated: true, completion: nil)
     }
+    
     
     // Prepare Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Create Second INstance
-        let viewController2 = segue.destination as! ViewController
+        // Create Second Instance
+        let viewController2 = segue.destination as! statsViewController
          // Username and Password
         if(self.username != "" && self.password != ""){
             viewController2.username = self.username
             viewController2.password = self.password
+        }
+        // Image
+        if self.theImage2 != nil {
+            viewController2.theImage = self.theImage2
         }
     }
         

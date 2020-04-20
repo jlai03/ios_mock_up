@@ -27,6 +27,7 @@ class uploadViewController: UIViewController {
         sendImageTimestamp(image: theImage2, filename: "NewImage")
         
         performSegue(withIdentifier: "Upload", sender: self)
+
     }
     
    // Retake Button
@@ -69,10 +70,7 @@ class uploadViewController: UIViewController {
             myImageview2.clipsToBounds = true
           }
     }
-    
-    
-    
-    
+
     // Code for sending httpPost request
     func sendImageTimestamp(image: UIImage, filename: String) {
         // 2nd argument ins compression quality [0, 1.0]
@@ -92,6 +90,7 @@ class uploadViewController: UIViewController {
         let type = "image/jpeg"     // file type
         let boundary = String(format: "----iOSURLSessionBoundary.%08x%08x", arc4random(), arc4random())
         var body = Data()
+
 
         // file data //
         body.append(("--\(boundary)" + CRLF).data(using: .utf8)!)

@@ -15,6 +15,7 @@
 		803C5DD224282E0D00FF069A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803C5DD024282E0D00FF069A /* LaunchScreen.storyboard */; };
 		803C5DDD24282E0D00FF069A /* Mock_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C5DDC24282E0D00FF069A /* Mock_UpTests.swift */; };
 		803C5DE824282E0D00FF069A /* Mock_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C5DE724282E0D00FF069A /* Mock_UpUITests.swift */; };
+		80A1B56C244D25F20055BB95 /* statsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1B56B244D25F20055BB95 /* statsViewController.swift */; };
 		80F7C8012431BD1F00B0103D /* uploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7C8002431BD1F00B0103D /* uploadViewController.swift */; };
 		80F7C8032433209500B0103D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7C8022433209500B0103D /* loginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		803C5DE324282E0D00FF069A /* Mock_UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mock_UpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		803C5DE724282E0D00FF069A /* Mock_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock_UpUITests.swift; sourceTree = "<group>"; };
 		803C5DE924282E0D00FF069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A1B56B244D25F20055BB95 /* statsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsViewController.swift; sourceTree = "<group>"; };
 		80F7C8002431BD1F00B0103D /* uploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadViewController.swift; sourceTree = "<group>"; };
 		80F7C8022433209500B0103D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				803C5DC924282E0B00FF069A /* ViewController.swift */,
 				80F7C8002431BD1F00B0103D /* uploadViewController.swift */,
 				803C5DCB24282E0B00FF069A /* Main.storyboard */,
+				80A1B56B244D25F20055BB95 /* statsViewController.swift */,
 				80F7C8022433209500B0103D /* loginViewController.swift */,
 				803C5DCE24282E0D00FF069A /* Assets.xcassets */,
 				803C5DD024282E0D00FF069A /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A1B56C244D25F20055BB95 /* statsViewController.swift in Sources */,
 				803C5DCA24282E0B00FF069A /* ViewController.swift in Sources */,
 				80F7C8012431BD1F00B0103D /* uploadViewController.swift in Sources */,
 				803C5DC624282E0B00FF069A /* AppDelegate.swift in Sources */,

@@ -17,9 +17,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var username: String!
     var password: String!
     
+    // Icon info
+    var canVasView = UIView()
+    
     // Username Display
     @IBOutlet weak var U_Display: UILabel!
-    
     
     // ImageView - Outlet
     @IBOutlet weak var myImageview: UIImageView!
@@ -93,21 +95,36 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
         // Circular Frame
         if myImageview != nil {
-        
-            // layer
+
+            // Adding icon 1 and 2
+            let myLayer = CALayer()
+            let myImage = UIImage(named: "r_circle")?.cgImage
+            myLayer.frame = CGRect(x: 140, y: 360, width: 30, height: 30)
+            myLayer.contents = myImage
+            
+            let myLayer2 = CALayer()
+            let myImage2 = UIImage(named:"b_circle")?.cgImage
+            myLayer2.frame = CGRect(x: 250, y: 360, width: 30, height: 30)
+            myLayer2.contents = myImage2
+            
+            canVasView.layer.addSublayer(myLayer)
+            canVasView.layer.addSublayer(myLayer2)
+
+            self.view.addSubview(canVasView)
+            
+            // layer - shape
             myImageview.layer.borderWidth = 1.0
             myImageview.layer.masksToBounds = false
             myImageview.layer.borderColor = UIColor.black.cgColor
             myImageview.layer.cornerRadius = myImageview.frame.height/2
             myImageview.clipsToBounds = true
-            
+
         }
           // Do any additional setup after loading the view.
       }
 
         
 }
-
 
 
 
